@@ -1,0 +1,73 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <img src="diner.jpg">
+            <h1 class="header-h1-text">Ryder's Diner</h1>
+            <p class="header-p-text">The best burgers and pizzas in town</p>
+        </header>
+        
+        <div id="render-menu">
+            <!-- menu here -->
+        </div>      
+        
+        <footer id="footer">
+            <div id="your-order-display">
+                <p id="your-order-header">Your order</p>
+                
+                <div id="render-order">
+                    <!-- render order here -->
+                </div>
+                
+                <div id="total">
+                    <p>Total Price:</p>
+                    <p id="total-price"></p>
+                </div>
+                
+                <button id="complete-order-btn" 
+                        data-complete="complete">
+                        Complete order
+                </button>
+            </div>
+            
+            <div id="processing-order">
+                <p>Your order is processing...</p>
+            </div>
+        </footer>
+        
+        <div id="complete-order-modal">
+            <div id="modal-inner">
+                <h2>Enter Card Details</h2>
+                <p id="processing-payment"></p>
+                <form id="form">
+                    <input 
+                    type="text"
+                    name="name"
+                    id="customer-name"
+                    placeholder="Enter your name"
+                    required>
+                    <input 
+                    type="text"
+                    name="cardNumber"
+                    placeholder="Enter your card number"
+                    required>
+                    <input 
+                    type="text"
+                    name="cvv"
+                    placeholder="Enter your CVV"
+                    required>
+                    <button type="submit" id="pay-button" data-pay="pay">Pay</button>
+                    <!--I noticed that when I click the pay button, the required attribute is not working-->
+                </form>
+            </div>
+        </div>
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,229 @@
+body {
+    margin: 0 auto;
+    width: 400px;
+    font-family: 'concert one';
+} 
+
+header{
+    position: relative; 
+}
+
+img{
+    width: 100%;
+    height: 150px;
+}
+
+.header-h1-text{
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    color: #204d4e;
+    font-size: 32px;
+    text-shadow: 2px 2px 2px #d8cdbb,
+                    2px 2px 2px #d8cdbb,
+                    1px 1px 1px #d8cdbb;   
+}
+
+.header-p-text{
+    position: absolute;
+    top: 45px;
+    left: 60px;
+    color: #204d4e;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #d8cdbb,
+                    2px 2px 2px #d8cdbb,
+                    1px 1px 1px #d8cdbb;               
+}
+
+
+/*MENU*/
+
+
+.menu-inner{
+    display: flex;
+    border-bottom: 1px solid #D2D2D2;
+    width: 350px;
+    margin: auto;
+    color: #173631;
+}
+
+.food-icon{
+    font-size: 40px;
+    filter: opacity(70%);
+}
+
+.food-text{
+    margin-left: 25px;
+}
+
+.food-name{
+    font-size: 20px;
+}
+
+.food-ingredients{
+    font-size: 12px;
+    color: #515050;
+}
+
+.food-price{
+    font-size: 14px;
+}
+
+.add-btn{
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    background-color: white;
+    color: #515050;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 40px
+}
+
+
+/*/////FOOTER/////*/
+
+
+#footer{
+    width: 350px;
+    margin: auto;   
+    color: #173631;
+    height: 200px;
+}
+
+
+/*YOUR ORDER*/
+
+#your-order-display{
+    display: none;
+}
+
+#your-order-header{
+    text-align: center;
+    font-size: 20px;
+}
+
+.order-items-inner{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.order-food-name{
+    font-size: 20px;
+    margin: 0;
+}
+
+.remove-btn{
+    border: none;
+    background-color: white;
+    font-size: 10px;
+    color: #919191;
+    cursor: pointer;
+    margin-left: 8px;
+    font-family: inherit;
+}
+
+.remove-item{
+    display: none;
+}
+
+.order-food-price{
+    margin-left: auto;
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+
+
+/*TOTAL*/
+
+#total{
+    border-top: 1px solid black;
+    display: flex;
+}
+
+#total-price{
+    margin-left: auto;
+}
+
+#complete-order-btn{
+    width: 350px;
+    margin: 10px auto;
+    margin-bottom: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #205b59;
+    font-family: inherit;
+}
+
+#processing-order{
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff4e6;
+    color: #ed992d;
+}
+
+#thanks-message{
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff4e6;
+    color: #ed992d;
+}
+
+
+/*MODAL*/
+
+#complete-order-modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 330px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 2px #515050;
+}
+
+#modal-inner{
+    text-align: center;
+}
+
+#processing-payment{
+    color: #173631;
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: auto;
+    gap: 10px;
+}
+
+input{
+    height: 30px;
+    font-family: inherit;
+}
+
+#pay-button{
+    margin-top: 30px;
+    width: 280px;
+    height: 35px;
+    background-color: #205b59;
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+    color: white;
+}
